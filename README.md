@@ -1,2 +1,3 @@
 # hello-world
-Just a start
+
+I'm Fangda and plan to start learning C++ today.
