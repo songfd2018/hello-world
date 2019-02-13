@@ -40,7 +40,7 @@ The `BUSseq` package works on a standard personal computer (PC). The runtimes re
 
 The package supports *Linux*, *Mac* and *Windows* operating systems. It has been tested on the following systems:
 
-Linux: Ubuntu 16.04
+Linux: Ubuntu 18.04
 
 Mac OSX: Mac OS X 10.14 Mojave
 
@@ -52,7 +52,7 @@ Before installing the `BUSseq` package, users should have installed `R` with ver
 
 #### Installing R version 3.5.2 on Windows
 
-Please download and install [R-3.5.2 for Windows](https://cran.r-project.org/bin/windows/base/) and double click to install it onto your computer. It will take a few minutes.
+Please download and install [R-3.5.2 for Windows](https://cran.r-project.org/bin/windows/base/) onto your computer. It will take a few minutes.
 
 #### Package dependencies
 
@@ -62,7 +62,7 @@ Users should install the following packages prior to installing `BUSseq`, from a
 install.packages(c('devtools', 'bigmemory', 'gplots', 'knitr'))
 ```
 
-which will install in 10 seconds on a recommended machine.
+which will install in about one minute on a recommended machine.
 
 #### Package Versions
 
@@ -92,7 +92,7 @@ or
 install.packages("/your/location/directory/BUSseq_0.99.6.tar.gz", repos = NULL, type = "source") # install BUSseq from zip file
 ```
 
-It takes approximately 25 seconds to install directly from Github and it costs 8 seconds to install the compiled package from a local directory. 
+It takes approximately 30 seconds to install directly from Github and it costs 10 seconds to install the compiled package from a local directory. 
 
 # Demo
 Please see the vignettes for the detailed instructions on how to use the package:
