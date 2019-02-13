@@ -35,7 +35,7 @@ The `BUSseq` package requires only a standard computer with enough RAM to suppor
 RAM: 16+ GB  
 CPU: 2+ cores, 3.3+ GHz/core
 
-The runtimes below are generated using a computer with the recommended specs (16 GB RAM, 2 cores@3.4 GHz) and internet of speed 25 Mbps.
+The runtimes below are generated using a computer with Windows 10 operating system, the recommended specs (16 GB RAM, 2 cores@3.4 GHz) and internet of speed 25 Mbps.
 
 ## Software Requirements
 
@@ -44,40 +44,34 @@ The runtimes below are generated using a computer with the recommended specs (16
 This package is supported for *Linux* operating systems. The package has been tested on the following systems:
 
 Linux: Ubuntu 16.04
+
 Mac OSX: Mac OS X 10.14 Mojave
+
 Windows: Windows 10
 
 The `BUSseq` package should be compatible with *Windows*, *Mac*, and *Linux* operating systems.
 
+### Software dependencies
+
 Before setting up the `BUSseq` package, users should have `R` version 3.5.0 or higher, and several packages set up from CRAN.
 
-#### Installing R version 3.5.2 on Ubuntu 18.04
+#### Installing R version 3.5.2 on Windows
 
-the latest version of R can be installed by adding the latest repository to `apt`:
-
-```
-sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
-gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-gpg -a --export E084DAB9 | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install r-base r-base-dev
-```
-
-which should install in about 20 seconds.
+Please download [R-3.5.2 for Windows] (https://cran.r-project.org/bin/windows/base/) and double click to install it on your computer. It will take a few minutes.
 
 #### Package dependencies
 
-Users should install the following packages prior to installing `BUSseq`, from an `R` terminal:
+Users should install the following packages prior to installing `BUSseq`, from an `R` session:
 
 ```
 install.packages(c('devtools', 'bigmemory', 'gplots', 'knitr'))
 ```
 
-which will install in about XX seconds on a recommended machine.
+which will install in 10 seconds on a recommended machine.
 
 #### Package Versions
 
-The `BUSseq` package functions with all packages in their latest versions as they appear on `CRAN` on February 13, 2017. Users can check [the Comprehensive R Archive Network](https://cran.r-project.org/) for details. The versions of software are, specifically:
+The `BUSseq` package functions with all packages in their latest versions as they appear on `CRAN` on February 13, 2019. Users can check [the Comprehensive R Archive Network] (https://cran.r-project.org/) for details. The versions of software are, specifically:
 ```
 devtools: 2.0.1
 bigmemory: 4.5.33
@@ -101,7 +95,7 @@ or
 ```
 install.packages("/your/location/directory/BUSseq_0.99.6.tar.gz", repos = NULL, type = "source") # install BUSseq from zip file
 ```
-The package should take approximately XX seconds to install on a recommended computer. 
+The package should take approximately 25 seconds from Github or 8 seconds from the compiled package to install on a recommended computer. 
 
 # Demo
 Please see the vignettes for help using the package:
@@ -109,6 +103,10 @@ Please see the vignettes for help using the package:
 ```
 vignette("BUSseq_user_guide",package="BUSseq")  # view the vignettes
 ```
+
+It will take about 6 minutes to run the first six sections in the vignettes except the last section, Model Selection using BIC. In the last section, we repeat the fitting with different numbers of cell types to attain the minimum BIC. Thus, 5 more of 6-minute are required to implement the model selection. In general, we parallel the codes for different numbers of cell types.
+
+Actually, the package can also record the time of conducting MCMC algorithm, adjusting raw count data and calculating the BIC value, respectively, which you can find in the vignette. When generating the vignette, we use another computer with Ubuntu 18.04 operating system, 8 GB RAM and 8 cores@2.60 GHz, so the running time is faster than that on a recommended computer.
 
 # Instructions for use
 Please follow the steps in the [BUSseq implementation](https://github.com/songfd2018/BUSseq_implementation) repository to reproduce all the results and figures of simulation and real data analysis.
