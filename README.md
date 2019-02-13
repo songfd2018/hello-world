@@ -7,7 +7,7 @@
 - [System Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
 - [Demo](#demo)
-- [Results](#results)
+- [Instructions for use](#instructions-for-use)
 - [License](./LICENSE)
 - [Citation](#citation)
 
@@ -44,8 +44,8 @@ The runtimes below are generated using a computer with the recommended specs (16
 This package is supported for *Linux* operating systems. The package has been tested on the following systems:
 
 Linux: Ubuntu 16.04
-Mac OSX:
-Windows:
+Mac OSX: Mac OS X 10.14 Mojave
+Windows: Windows 10
 
 The `BUSseq` package should be compatible with *Windows*, *Mac*, and *Linux* operating systems.
 
@@ -70,7 +70,7 @@ which should install in about 20 seconds.
 Users should install the following packages prior to installing `BUSseq`, from an `R` terminal:
 
 ```
-install.packages(c('devtools', 'bigmemory', 'gplots', 'knitr', 'BiocStyle', 'BiocGenerics'))
+install.packages(c('devtools', 'bigmemory', 'gplots', 'knitr'))
 ```
 
 which will install in about XX seconds on a recommended machine.
@@ -83,8 +83,6 @@ devtools: 2.0.1
 bigmemory: 4.5.33
 gplots: 3.0.1.1
 knitr: 1.12
-BiocStyle: 2.10.0
-BiocGenerics: 0.28.0
 ```
 
 If you are having an issue that you believe to be tied to software versioning issues, please drop us an [Issue](https://github.com/songfd2018/BUSseq/issues). 
@@ -105,13 +103,14 @@ install.packages("/your/location/directory/BUSseq_0.99.6.tar.gz", repos = NULL, 
 ```
 The package should take approximately XX seconds to install on a recommended computer. 
 
-# Instructions for Use
+# Demo
 Please see the vignettes for help using the package:
 
 ```
 vignette("BUSseq_user_guide",package="BUSseq")  # view the vignettes
 ```
 
+# Instructions for use
 Please follow the steps in the [BUSseq implementation](https://github.com/songfd2018/BUSseq_implementation) repository to reproduce all the results and figures of simulation and real data analysis.
 
 # Citation
