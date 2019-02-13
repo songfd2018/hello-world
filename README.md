@@ -66,7 +66,7 @@ which will install in about one minute on a recommended machine.
 
 #### Package Versions
 
-The `BUSseq` package functions with the above packages with the following versions, respectively:
+The `BUSseq` package functions require the above packages with the following versions, respectively:
 
 ```
 devtools: 2.0.1
@@ -95,6 +95,7 @@ install.packages("/your/location/directory/BUSseq_0.99.6.tar.gz", repos = NULL, 
 It takes approximately 30 seconds to install directly from Github and it costs 10 seconds to install the compiled package from a local directory. 
 
 # Demo
+
 Please see the vignettes for the detailed instructions on how to use the package:
 
 ```
